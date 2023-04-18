@@ -19,7 +19,7 @@
 # under the License.
 #
 from base import TestBase
-from mock import patch
+from unittest.mock import patch
 import symtable
 
 from pycg.machinery.scopes import ScopeManager, ScopeItem, ScopeError

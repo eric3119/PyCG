@@ -42,6 +42,8 @@ class ClassNode:
         self.mro = [ns]
 
     def add_parent(self, parent):
+        if parent == self.mro:
+            return
         if isinstance(parent, str):
             self.mro.append(parent)
         elif isinstance(parent, list):

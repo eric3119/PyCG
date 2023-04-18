@@ -20,7 +20,7 @@
 #
 import sys
 import copy
-import mock
+import unittest.mock as mock
 import os
 
 from base import TestBase
